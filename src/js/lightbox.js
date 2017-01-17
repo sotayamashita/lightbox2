@@ -388,7 +388,7 @@
 
     this.$lightbox.find('.lb-nav').show();
 
-    if (this.album.length > 1) {
+    if (this.options.wrapImages && this.album.length > 1) {
       if (this.options.wrapAround) {
         if (alwaysShowNav) {
           this.$lightbox.find('.lb-prev, .lb-next').css('opacity', '1');
